@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Date & Year Info App</title>
+    <link rel="icon" type="image/gif" href="pinch.gif">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <h1>Date Info & Festival Checker</h1>
+
+        <label for="dateInput">Enter a date (use the format selector):</label>
+        <input id="dateInput" type="text" placeholder="02-06-1989 or 6-2-1989" />
+
+        <div class="format-row">
+            <label><input type="radio" name="fmt" value="ddmmyyyy" checked> dd-mm-yyyy</label>
+            <label><input type="radio" name="fmt" value="mmddyyyy"> mm-dd-yyyy</label>
+        </div>
+
+        <div class="controls">
+            <label for="rangeInput">Range (years each side):</label>
+            <input id="rangeInput" type="number" value="50" min="1" max="200" />
+        </div>
+
+        <div class="buttons">
+            <button id="compareBtn" class="but1">Compare Years</button>
+            <button id="checkBtn" class="but3">Check Weekday</button>
+        </div>
+
+        <hr />
+
+        <label for="yearInput">Enter a year (leap check):</label>
+        <input id="yearInput" type="number" placeholder="2004" />
+        <button id="leapBtn" class="but2">Leap Year Status</button>
+
+        <div id="outputCompare" class="output"></div>
+        <div id="outputCheck" class="output"></div>
+        <div id="outputLeap" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
